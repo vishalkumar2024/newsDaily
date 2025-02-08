@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Navbar extends Component {
     render() {
@@ -15,18 +16,18 @@ export default class Navbar extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">Link</a>
-                                </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
+                                        News Category
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="/">Top News</a></li>
-                                        <li><a className="dropdown-item" href="/">Daily News</a></li>
-                                        <li><a className="dropdown-item" href="/">Local News</a></li>
-                                        <li><a className="dropdown-item" href="/">International News</a></li>
+                                        <li><Link className="dropdown-item" to="/Business">Business</Link></li>
+                                        <li><Link className="dropdown-item" to="/General">General</Link></li>
+                                        <li><Link className="dropdown-item" to="/Science">Science</Link></li>
+                                        <li><Link className="dropdown-item" to="/Technology">Technology</Link></li>
+                                        <li><Link className="dropdown-item" to="/Sports">Sports</Link></li>
+                                        <li><Link className="dropdown-item" to="/Health">Health</Link></li>
+                                        <li><Link className="dropdown-item" to="/Entertainment">Entertainment</Link></li>
                                     </ul>
                                 </li>
                               
@@ -42,3 +43,9 @@ export default class Navbar extends Component {
         )
     }
 }
+
+
+
+
+
+
