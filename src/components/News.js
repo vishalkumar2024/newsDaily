@@ -33,7 +33,7 @@ export default class News extends Component {
     this.props.setProgress(50)
     let rawData = await fetch(url);
     let data = await rawData.json();
-    console.log(data)
+    // console.log(data)
     // console.log(data.articles)
     this.setState({
       articles: data.articles,
